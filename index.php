@@ -1,106 +1,56 @@
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JSO Generator</title>
-	<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
-	<script type="text/javascript">
-		function copy_text() {
-			document.getElementById("pilih").select();
-			document.execCommand("copy");
-			alert("Text Berhasil Di Copy");
-		}
-	</script>
-	<style>
-	body {
-		background-color:#2C3A49;
-		color:white;
-		font-family: 'Fredoka One', cursive;
-	}
-	.head {
-		font-family: 'Fredoka One', cursive;
-		text-shadow: 4px 1px red;
-	}
-	.textarea {
-		width: 200px;
-		height: 100px;
-		border-radius: 10px;
-		border-style: unset;
-	}
-	.btn {
-		border-radius: 3px;
-		background-color: white;
-		border-style: unset;
-		font-family: 'Fredoka One', cursive;
-	}
-	.foot {
-		font-family: 'Caveat', cursive;
-		text-shadow: 4px 1px red;
-	}
-	.ress {
-		font-size: 20px;
-    	color: aqua;
-		font-family: 'Fredoka One', cursive;
-	}
-	</style>
-    <script>
-		function runCharCodeAt() {
-			input = document.charCodeAt.input.value;
-			output = "";
-			for(i=0; i<input.length; ++i) {
-				if (output != "") output += ", ";
-				output += input.charCodeAt(i);
-			}
-			document.charCodeAt.output.value = output;
-		}
-	</script>
-</head>
-<body>
-<center>
-<h1 class="head">Tools Jso Generator</h1>
-<form name="charCodeAt" method="post">
-		<textarea name="input" class="textarea" placeholder="Masukan Script Yang Mau Di Pake"></textarea><br><br>
-		<input type="button" onclick="runCharCodeAt()" value="Convert" class="btn"><br><br>
-		<textarea name="output" class="textarea"></textarea><br><br>
-		<input type="submit" name="submit" value="Create" class="btn"><br><br>
-</form>
-<?php 
 
-if (isset($_POST['submit'])) {
-	if (empty($_POST['output'])) {
-		echo "<script>alert('Convert Script Dulu!');</script>";
-	}else{
-
-	$isi = $_POST['output'];
-	$ch = curl_init();
-
-	curl_setopt($ch, CURLOPT_URL, 'https://api-nor.000webhostapp.com/api-jso.php');
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	curl_setopt($ch, CURLOPT_POST, 1);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, "submit=Create&output=97, 110, 106, 105, 114");
-
-	$headers = array();
-	$headers[] = 'Content-Type: application/x-www-form-urlencoded';
-	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-	$result = curl_exec($ch);
-	if (curl_errno($ch)) {
-	    echo 'Error:' . curl_error($ch);
+<html>
+ <head> 
+  <title>Hacked By ./X POIY 3EXPLOITER</title> 
+  <meta property="og:title" content="Hacked By ./X POIY 3EXPLOITER"> 
+  <meta property="og:description" content="s"> 
+  <meta property="og:keywords" content="Hacked by  ./X POIY 3EXPLOITER"> 
+  <meta property="og:image" content="https://i1.sndcdn.com/artworks-000592875815-c8yndg-t500x500.jpg"> 
+  <meta name="author" content="s"> 
+  <style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+	@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+	html {
+		background: url(https://i.ibb.co/jwhhS71/oie-HRAho-N3-Mg6t-W.gif) fixed transparent;
+		margin: 1em auto;
+		text-align: center;
+		font-family:'Ubuntu';
 	}
-	curl_close($ch);
-	// var_dump($result);
-	$ress = $result;
-	echo "<h1 class='ress'>Result:</h1>";
-	echo "<input type='text' value='$ress' id='pilih' readonly />";
-	echo "<button type='button' onclick='copy_text()'>Copy</button>";
-}}
-echo "<h2 class='foot'>@2k19 Coded By X POIY 3EXPLOITER</h2>";
-
-?>
-
-</body>
+	header {
+		font-family:'Courier New';
+		font-size: 63px;
+		color: #606060;
+	}
+	span {
+		color: #bb0000;
+	}
+	article {
+		color: #606060;
+		font-size: 15px;
+		margin: 10px auto;
+		font-family:'Ubuntu';
+	}
+	</style> 
+ </head> 
+ <body onmousedown="return false" oncontextmenu="return false" onkeydown="return false" onkeyup="return false" onmouseup="return false"> 
+  <center>
+   <b><font face="Courier New" size="5px" color="#dbd9d9"> Hacked By </font><font face="Courier New" size="6px" color="#BB0000"><b><span lang="en-us"> ./X POIY 3EXPLOITER </span></b></font><p></p></b>
+  </center> 
+  <img src="https://i.top4top.io/p_22428c8q60.gif" style="opacity:0.4;filter:alpha(opacity=40)" onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100" onmouseout="this.style.opacity=0.4;this.filters.alpha.opacity=40" height="360" width="670">
+  <br> 
+  <b><font size="4" face="Courier New" color="#606060">Your Website Has Been Hacked</font></b>
+  <br> 
+  <b><font size="4" face="Courier New" color="#BB0000">| We are just Ordinary Human | Don't Being a Stupid |</font></b>
+  <br> 
+  <b><font size="4" face="Courier New" color="#dbd9d9">- Use ur Brain -</font></b>
+  <br> 
+  <b><font size="4" face="Courier New" color="#BB0000"> Greetz </font></b>
+  <br> 
+  <b><font size="4" face="Courier New" color="#606060">| JOWO X-404 | ONE HAT CYBER TEAM | BANDUNG DEFECER.ID | Minions CyberTeam| SCT | WCP | Mugiwara BLACKHAT|DEATHLY BLACKHAT||JAWA TENGGAH XPLOIT1337||BBT|| AND TEAM MY ||and my other team</font></b>
+  <br>
+<center><audio autoplay="autoplay"controls="controls"src="https://f.top4top.io/m_1948pg2ma9.mp3"></audio></a></center>  
+  <br> 
+  <!-- button link --> 
+  <a href="https://wa.me/"><button type="submit">Contact Me :D</button> <p></p> <iframe width="0" height="0" scrolling="no" frameborder="no" allow="autoplay" loop="true" src="https://a.top4top.io/m_2159vmtgf1.mp3" <="" iframe=""></iframe></a>
+ </body>
 </html>
